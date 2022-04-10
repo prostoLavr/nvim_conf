@@ -18,21 +18,12 @@ nnoremap ,<space> :nohlsearch<CR>
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'L3MON4D3/LuaSnip'
 
 
 " color schemas
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox
 Plug 'preservim/tagbar'  " File structure
-
-" For JS/JSX
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
 
@@ -46,3 +37,4 @@ autocmd VimEnter *.py TagbarToggle
 let g:tagbar_compact = 1  
 " Отк. сортировка по имени 
 let g:tagbar_sort = 0
+
